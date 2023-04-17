@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Secuencia 1 en 1</title>
+</head>
+
+<body>
+    <h1>Ingresa una lista de números separados por comas:</h1>
+    <input type="text" id="numeros">
+    <button onclick="verificarSecuencia()">Verificar Secuencia</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarSecuencia() {
+            let numeros = document.getElementById("numeros").value.split(",");
+            let secuencia = 0;
+            
+            // parseInt(numeros[i]) + 1 == parseInt(numeros[i + 1])
+            // parseInt(numeros[i]) + 1 == parseInt(numeros[i + 1])
+            
+            for (let i = 0; i < numeros.length - 1; i++) {
+                parseInt(numeros[i]);
+                parseInt(comparador);
+                comparador = numeros[i];
+                if (comparador == i + 1) {
+                    secuencia++;
+                }
+            }
+
+            for (let i = 0; i < numeros.length - 1; i++) {
+                if (comparador == i + 1) {
+                    secuencia++;
+                }
+
+            document.getElementById("resultado").innerHTML = "Hay " + secuencia
+                + " números que siguen la secuencia 1 en 1.";
+        }
+    }
+    </script>
+</body>
+
+</html>
